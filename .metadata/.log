@@ -1,4 +1,4 @@
-!SESSION 2020-01-08 10:10:33.688 -----------------------------------------------
+!SESSION 2020-01-08 14:10:53.617 -----------------------------------------------
 eclipse.buildId=4.7.3.M20180330-0640
 java.version=1.8.0_231
 java.vendor=Oracle Corporation
@@ -6,15 +6,15 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.jface 2 0 2020-01-08 10:11:38.699
+!ENTRY org.eclipse.jface 2 0 2020-01-08 14:10:59.536
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-08 10:11:38.699
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-08 14:10:59.537
 !MESSAGE A conflict occurred for ALT+CTRL+T:
 Binding(ALT+CTRL+T,
 	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
 		,
 		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74b13aa,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5a86112a,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -22,12 +22,12 @@ Binding(ALT+CTRL+T,
 	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
 		,
 		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@31d09031,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3203ffa3,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 10:11:43.778
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 14:11:03.095
 !MESSAGE Server ‘net.harawata.aer.mybatipse’ failed with exception: aer.ctrlflow.com. ; version: 2.0.7.v20170906-1327
 !STACK 0
 java.net.UnknownHostException: aer.ctrlflow.com
@@ -57,14 +57,14 @@ java.net.UnknownHostException: aer.ctrlflow.com
 	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
 	at java.lang.Thread.run(Thread.java:748)
 
-!ENTRY org.eclipse.egit.ui 2 0 2020-01-08 10:11:43.937
+!ENTRY org.eclipse.egit.ui 2 0 2020-01-08 14:11:03.231
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\Genie'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 10:11:47.197
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 14:11:06.091
 !MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
 !STACK 0
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
@@ -83,10 +83,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
 	... 9 more
 
-!ENTRY org.eclipse.ui 2 2 2020-01-08 10:14:27.778
-!MESSAGE Invalid preference category path: egovframework.dev.imp.confmngt.preferences.emptyconfpreperencepage (bundle: egovframework.rte.rdt, page: egovframework.rte.rdt.plugin.preferences.RdtPreferencePage)
-
-!ENTRY net.sourceforge.pmd.eclipse.plugin 4 0 2020-01-08 10:16:54.611
+!ENTRY net.sourceforge.pmd.eclipse.plugin 4 0 2020-01-08 14:12:27.809
 !MESSAGE FrameworkEvent ERROR
 !STACK 0
 org.osgi.framework.BundleException: Exception in net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop() of bundle net.sourceforge.pmd.eclipse.plugin.
@@ -143,23 +140,71 @@ Caused by: java.lang.NullPointerException
 	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<init>(PriorityDescriptorCache.java:28)
 	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<clinit>(PriorityDescriptorCache.java:24)
 	... 18 more
-!SESSION 2020-01-08 10:17:13.662 -----------------------------------------------
+!SESSION 2020-01-08 14:12:28.879 -----------------------------------------------
 eclipse.buildId=4.7.3.M20180330-0640
 java.version=1.8.0_231
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data file:/D:/egov/workspace/ -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.jface 2 0 2020-01-08 10:17:25.874
+!ENTRY com.genuitec.eclipse.startup 4 0 2020-01-08 14:13:08.149
+!MESSAGE Error excluding paths. Failed to launch process: 0
+
+
+!ENTRY com.genuitec.eclipse.startup 4 0 2020-01-08 14:13:08.157
+!MESSAGE Workbench has not been created yet.
+!STACK 0
+java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at com.genuitec.eclipse.core.ui.util.PlatformSWTUtil.invokeOnDisplayThread(PlatformSWTUtil.java:187)
+	at com.genuitec.eclipse.core.util.PlatformUIUtil$1SwtRunner.computeActiveShell(PlatformUIUtil.java:116)
+	at com.genuitec.eclipse.core.util.PlatformUIUtil.getActiveWorkbenchWindow(PlatformUIUtil.java:127)
+	at com.genuitec.eclipse.core.util.PlatformUIUtil.getActiveShell(PlatformUIUtil.java:63)
+	at com.genuitec.eclipse.startup.util.WindowsDefenderChecker.checkWindowsDefenderIfNeeded(WindowsDefenderChecker.java:615)
+	at com.genuitec.eclipse.startup.StartupHandler.lambda$0(StartupHandler.java:62)
+	at com.genuitec.eclipse.startup.StartupHandler.handleWorkspaceSet(StartupHandler.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.handleWorkspaceSet(IDEApplication.java:625)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:223)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:141)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 2 0 2020-01-08 14:13:10.027
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-01-08 14:13:10.027
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-01-08 14:13:11.292
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-01-08 14:13:11.323
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.jface 2 0 2020-01-08 14:13:12.030
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-08 10:17:25.874
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-08 14:13:12.030
 !MESSAGE A conflict occurred for ALT+CTRL+T:
 Binding(ALT+CTRL+T,
 	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
 		,
 		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ba32242,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@221b9c2b,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -167,12 +212,12 @@ Binding(ALT+CTRL+T,
 	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
 		,
 		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@581f1f40,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42017162,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 10:17:29.849
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 14:13:15.811
 !MESSAGE Server ‘net.harawata.aer.mybatipse’ failed with exception: aer.ctrlflow.com. ; version: 2.0.7.v20170906-1327
 !STACK 0
 java.net.UnknownHostException: aer.ctrlflow.com
@@ -202,14 +247,14 @@ java.net.UnknownHostException: aer.ctrlflow.com
 	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
 	at java.lang.Thread.run(Thread.java:748)
 
-!ENTRY org.eclipse.egit.ui 2 0 2020-01-08 10:17:29.927
+!ENTRY org.eclipse.egit.ui 2 0 2020-01-08 14:13:15.965
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\Genie'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 10:17:32.793
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 14:13:18.921
 !MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
 !STACK 0
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
@@ -228,291 +273,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
 	... 9 more
 
-!ENTRY net.sourceforge.pmd.eclipse.plugin 4 0 2020-01-08 10:18:51.032
-!MESSAGE FrameworkEvent ERROR
-!STACK 0
-org.osgi.framework.BundleException: Exception in net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop() of bundle net.sourceforge.pmd.eclipse.plugin.
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:855)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ExceptionInInitializerError
-	at net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop(PMDPlugin.java:382)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
-	... 13 more
-Caused by: java.lang.NullPointerException
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.preferencesManager(PriorityDescriptorCache.java:32)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.loadFromPreferences(PriorityDescriptorCache.java:43)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<init>(PriorityDescriptorCache.java:28)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<clinit>(PriorityDescriptorCache.java:24)
-	... 18 more
-Root exception:
-java.lang.ExceptionInInitializerError
-	at net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop(PMDPlugin.java:382)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.preferencesManager(PriorityDescriptorCache.java:32)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.loadFromPreferences(PriorityDescriptorCache.java:43)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<init>(PriorityDescriptorCache.java:28)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<clinit>(PriorityDescriptorCache.java:24)
-	... 18 more
-!SESSION 2020-01-08 10:20:35.646 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180330-0640
-java.version=1.8.0_231
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
-
-!ENTRY org.eclipse.jface 2 0 2020-01-08 10:20:49.361
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-08 10:20:49.361
-!MESSAGE A conflict occurred for ALT+CTRL+T:
-Binding(ALT+CTRL+T,
-	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
-		,
-		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1455a374,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(ALT+CTRL+T,
-	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
-		,
-		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@cfb462,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.egit.ui 2 0 2020-01-08 10:20:54.717
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Genie'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 10:20:55.065
-!MESSAGE Server ‘net.harawata.aer.mybatipse’ failed with exception: aer.ctrlflow.com. ; version: 2.0.7.v20170906-1327
-!STACK 0
-java.net.UnknownHostException: aer.ctrlflow.com
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
-	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
-	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
-	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
-	at java.lang.Thread.run(Thread.java:748)
-
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 10:20:58.209
-!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
-!STACK 0
-com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
-	at com.google.gson.Gson.fromJson(Gson.java:888)
-	at com.google.gson.Gson.fromJson(Gson.java:853)
-	at com.google.gson.Gson.fromJson(Gson.java:802)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
-	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
-	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
-	... 9 more
-
-!ENTRY net.sourceforge.pmd.eclipse.plugin 4 0 2020-01-08 10:51:24.362
-!MESSAGE FrameworkEvent ERROR
-!STACK 0
-org.osgi.framework.BundleException: Exception in net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop() of bundle net.sourceforge.pmd.eclipse.plugin.
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:855)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ExceptionInInitializerError
-	at net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop(PMDPlugin.java:382)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
-	... 13 more
-Caused by: java.lang.NullPointerException
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.preferencesManager(PriorityDescriptorCache.java:32)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.loadFromPreferences(PriorityDescriptorCache.java:43)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<init>(PriorityDescriptorCache.java:28)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<clinit>(PriorityDescriptorCache.java:24)
-	... 18 more
-Root exception:
-java.lang.ExceptionInInitializerError
-	at net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop(PMDPlugin.java:382)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.preferencesManager(PriorityDescriptorCache.java:32)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.loadFromPreferences(PriorityDescriptorCache.java:43)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<init>(PriorityDescriptorCache.java:28)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<clinit>(PriorityDescriptorCache.java:24)
-	... 18 more
-!SESSION 2020-01-08 11:04:13.485 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180330-0640
-java.version=1.8.0_231
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
-
-!ENTRY org.eclipse.jface 2 0 2020-01-08 11:04:22.095
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-08 11:04:22.095
-!MESSAGE A conflict occurred for ALT+CTRL+T:
-Binding(ALT+CTRL+T,
-	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
-		,
-		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1455a374,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(ALT+CTRL+T,
-	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
-		,
-		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@cfb462,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 11:04:27.188
-!MESSAGE Server ‘net.harawata.aer.mybatipse’ failed with exception: aer.ctrlflow.com. ; version: 2.0.7.v20170906-1327
-!STACK 0
-java.net.UnknownHostException: aer.ctrlflow.com
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
-	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
-	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
-	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
-	at java.lang.Thread.run(Thread.java:748)
-
-!ENTRY org.eclipse.egit.ui 2 0 2020-01-08 11:04:27.294
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Genie'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 11:04:30.269
-!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
-!STACK 0
-com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
-	at com.google.gson.Gson.fromJson(Gson.java:888)
-	at com.google.gson.Gson.fromJson(Gson.java:853)
-	at com.google.gson.Gson.fromJson(Gson.java:802)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
-	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
-	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
-	... 9 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 11:19:50.903
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:14:22.067
 !MESSAGE Unable to configure portal
 !STACK 0
 org.eclipse.m2e.wtp.MarkedException: Unable to configure portal
@@ -615,43 +376,43 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:95)
 	... 86 more
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:19:59.782
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:14:30.341
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:20:03.036
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:14:32.332
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:22:18.990
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:15:56.801
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:22:18.998
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:15:56.805
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.ui 2 2 2020-01-08 11:22:22.581
-!MESSAGE Invalid preference category path: egovframework.dev.imp.confmngt.preferences.emptyconfpreperencepage (bundle: egovframework.rte.rdt, page: egovframework.rte.rdt.plugin.preferences.RdtPreferencePage)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:22:54.435
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:15:56.814
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:22:54.441
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:16:01.899
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:25:27.127
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:16:03.359
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:25:27.131
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:16:28.493
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:25:27.140
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:16:28.497
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:25:33.583
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:16:28.502
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:25:35.611
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:17:12.334
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 11:26:18.744
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:17:12.346
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:17:50.804
 !MESSAGE Unable to configure portal
 !STACK 0
 org.eclipse.m2e.wtp.MarkedException: Unable to configure portal
@@ -686,19 +447,22 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:95)
 	... 18 more
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:26:22.429
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:17:54.028
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:26:23.578
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:17:55.046
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:26:23.584
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:17:55.052
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.wst.server.discovery 1 0 2020-01-08 11:28:37.135
+!ENTRY org.eclipse.ui 2 2 2020-01-08 14:18:37.720
+!MESSAGE Invalid preference category path: egovframework.dev.imp.confmngt.preferences.emptyconfpreperencepage (bundle: egovframework.rte.rdt, page: egovframework.rte.rdt.plugin.preferences.RdtPreferencePage)
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2020-01-08 14:19:21.157
 !MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
 
-!ENTRY org.eclipse.ui 4 0 2020-01-08 11:29:36.438
+!ENTRY org.eclipse.ui 4 0 2020-01-08 14:19:43.597
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.swt.SWTException: Widget is disposed
@@ -716,6 +480,35 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:980)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.performFinish(TaskWizard.java:223)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:778)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:417)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:81)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.wst.server.ui.internal.cnf.ServersView2$1.widgetSelected(ServersView2.java:116)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendSelectionEvent(Widget.java:1120)
+	at org.eclipse.swt.widgets.Link.WM_LBUTTONUP(Link.java:1035)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4880)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5178)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2560)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3815)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
@@ -739,7 +532,10 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-01-08 11:30:32.738
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-01-08 14:19:59.978
+!MESSAGE Port 8080 required by Tomcat v9.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-01-08 14:20:02.176
 !MESSAGE Connection to http://www.pramati.com/downloads/eclipse/updates/p2.index failed on Connection timed out: connect. Retry attempt 0 started
 !STACK 0
 java.net.ConnectException: Connection timed out: connect
@@ -751,7 +547,9 @@ java.net.ConnectException: Connection timed out: connect
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:606)
-	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.performConnection(ECFHttpClientSecureProtocolSocketFactory.java:96)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.connectSocket(ECFHttpClientSecureProtocolSocketFactory.java:77)
+	at org.apache.http.conn.scheme.SchemeLayeredSocketFactoryAdaptor2.connectSocket(SchemeLayeredSocketFactoryAdaptor2.java:62)
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
@@ -765,310 +563,475 @@ java.net.ConnectException: Connection timed out: connect
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:32:32.814
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.232
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.consumption.ui.doc.user_1.0.700.v201309242123 [550]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.235
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jdt.doc.user_3.13.75.v20180329-0655 [409]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.239
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.axis2.ui.doc.user_1.0.200.v201309242118 [546]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.242
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.command.env.doc.user_1.5.400.v201309242123 [836]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.253
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.jsdt.doc_2.0.200.v201710302345 [883]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.257
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.dtdeditor.doc.user_1.0.700.v201208081537 [859]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.260
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.j2ee.doc.user_1.1.400.v201008122207 [483]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.263
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.platform.doc.user_4.7.3.v20180328-1557 [725]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.266
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.xmleditor.doc.user_1.0.700.v201707252002 [954]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 4 0 2020-01-08 14:20:43.267
+!MESSAGE index/indexed_dependencies file missing from help index "index" of plugin org.eclipse.uml2.doc
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.270
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.xsdeditor.doc.user_1.0.800.v201707252002 [957]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.274
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ejb.doc.user_1.1.301.v201105130955 [478]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.278
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.axis.ui.doc.user_1.1.200.v201309242123 [539]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.281
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.wsdl.ui.doc.user_1.0.850.v201309242123 [940]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.285
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.webtools.doc.user_1.0.500.v201208081537 [930]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.288
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.server.ui.doc.user_1.1.600.v201309182117 [917]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.291
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.pde.doc.user_3.13.75.v20180328-1557 [702]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.294
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.doc.user_1.0.700.v201612121628 [560]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.297
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.wsi.ui.doc.user_1.0.750.v201309242123 [944]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.301
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.server.ui.doc.user_1.0.600.v201309182117 [528]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2020-01-08 14:20:43.304
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.sse.doc.user_1.1.100.v201208081537 [920]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 4 4 2020-01-08 14:20:49.603
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2020-01-08 14:20:49.603
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_codeFormatter.html cannot be opened.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:21:44.574
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:21:44.578
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 11:32:32.818
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:21:44.581
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY net.sourceforge.pmd.eclipse.plugin 4 0 2020-01-08 12:54:32.432
-!MESSAGE FrameworkEvent ERROR
-!STACK 0
-org.osgi.framework.BundleException: Exception in net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop() of bundle net.sourceforge.pmd.eclipse.plugin.
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:855)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:23:59.607
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2020-01-08 14:24:55.188
+!MESSAGE Resource '/portal/src/main/webapp/WEB-INF/web.xml' is not local.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/portal/src/main/webapp/WEB-INF/web.xml' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:276)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:112)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:54)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:228)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:747)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:814)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:875)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.translateCodas(JSPTranslator.java:3290)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.translate(JSPTranslator.java:1218)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslationAdapter.getJSPTranslation(JSPTranslationAdapter.java:152)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchDocument.getJSPTranslation(JSPSearchDocument.java:120)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchDocument.getPath(JSPSearchDocument.java:159)
+	at org.eclipse.jst.jsp.core.internal.java.search.JavaSearchDocumentDelegate.<init>(JavaSearchDocumentDelegate.java:30)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchSupport.createSearchDocument(JSPSearchSupport.java:448)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchSupport.addJspFile(JSPSearchSupport.java:278)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPIndexManager.performAction(JSPIndexManager.java:155)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$1.run(AbstractIndexManager.java:1544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob.run(AbstractIndexManager.java:1542)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2020-01-08 14:24:55.188
+!MESSAGE Resource '/portal/src/main/webapp/WEB-INF/web.xml' is not local.
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2020-01-08 14:24:55.189
+!MESSAGE Resource '/portal/src/main/webapp/WEB-INF/web.xml' is not local.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/portal/src/main/webapp/WEB-INF/web.xml' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:276)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:112)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:54)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:228)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:747)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:814)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:875)
+	at org.eclipse.jst.jsp.core.internal.contentmodel.tld.TLDCMDocumentManager.handlePreludes(TLDCMDocumentManager.java:995)
+	at org.eclipse.jst.jsp.core.internal.contentmodel.tld.TLDCMDocumentManager$DirectiveStructuredDocumentRegionHandler.nodeParsed(TLDCMDocumentManager.java:188)
+	at org.eclipse.wst.xml.core.internal.parser.XMLSourceParser.fireNodeParsed(XMLSourceParser.java:135)
+	at org.eclipse.jst.jsp.core.internal.parser.JSPSourceParser.parseNodes(JSPSourceParser.java:296)
+	at org.eclipse.wst.xml.core.internal.parser.XMLSourceParser.getDocumentRegions(XMLSourceParser.java:173)
+	at org.eclipse.wst.sse.core.internal.text.StructuredDocumentReParser._core_reparse_text(StructuredDocumentReParser.java:355)
+	at org.eclipse.wst.sse.core.internal.text.StructuredDocumentReParser.core_reparse(StructuredDocumentReParser.java:752)
+	at org.eclipse.jst.jsp.core.internal.parser.JSPReParser.reparse(JSPReParser.java:153)
+	at org.eclipse.wst.sse.core.internal.text.StructuredDocumentReParser.reparse(StructuredDocumentReParser.java:1333)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.updateModel(BasicStructuredDocument.java:2713)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(BasicStructuredDocument.java:1923)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2423)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.set(BasicStructuredDocument.java:2935)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.setDocumentContent(ResourceTextFileBuffer.java:533)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.initializeFileBufferContent(ResourceTextFileBuffer.java:258)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:244)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:112)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:786)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:548)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:512)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:485)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1443)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchDocument.getJSPTranslation(JSPSearchDocument.java:112)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchDocument.getCharContents(JSPSearchDocument.java:77)
+	at org.eclipse.jst.jsp.core.internal.java.search.JavaSearchDocumentDelegate.getCharContents(JavaSearchDocumentDelegate.java:41)
+	at org.eclipse.jdt.internal.core.search.indexing.SourceIndexer.indexDocument(SourceIndexer.java:103)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.indexDocument(JavaSearchParticipant.java:76)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchParticipant.indexDocument(JSPSearchParticipant.java:72)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.indexDocument(IndexManager.java:543)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager$1.execute(IndexManager.java:1048)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:396)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ExceptionInInitializerError
-	at net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop(PMDPlugin.java:382)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
-	... 13 more
-Caused by: java.lang.NullPointerException
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.preferencesManager(PriorityDescriptorCache.java:32)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.loadFromPreferences(PriorityDescriptorCache.java:43)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<init>(PriorityDescriptorCache.java:28)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<clinit>(PriorityDescriptorCache.java:24)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2020-01-08 14:24:55.189
+!MESSAGE Resource '/portal/src/main/webapp/WEB-INF/web.xml' is not local.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:24:55.823
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:24:56.945
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:24:57.108
+!MESSAGE Unable to configure portal
+!STACK 0
+org.eclipse.m2e.wtp.MarkedException: Unable to configure portal
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:99)
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:68)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:508)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:501)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:439)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:352)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:349)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:335)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:317)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:306)
+	at egovframework.dev.imp.ide.wizards.operation.ProjectCreationOperation.run(ProjectCreationOperation.java:636)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:437)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:353)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:980)
+	at egovframework.dev.imp.ide.wizards.EgovNewProjectWizard.performFinish(EgovNewProjectWizard.java:125)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:778)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:417)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:81)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:133)
+	at egovframework.dev.imp.ide.handlers.project.NewTemplateProject.execute(NewTemplateProject.java:27)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:431)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:446)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:472)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339)
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:136)
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:95)
+	... 86 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:25:01.230
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:25:01.245
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:25:02.661
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:25:02.667
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:26:12.538
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:26:13.318
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:26:13.398
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:26:13.403
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:26:13.408
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:26:29.971
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:26:30.645
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:26:30.744
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:26:30.748
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:26:30.754
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:26:34.623
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:26:34.733
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:26:35.953
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:27:02.324
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:27:02.327
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:27:02.332
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:27:21.177
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:27:21.844
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:27:21.956
+!MESSAGE Unable to configure portal
+!STACK 0
+org.eclipse.m2e.wtp.MarkedException: Unable to configure portal
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:99)
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:68)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:508)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:501)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:439)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:352)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:349)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339)
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:136)
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:95)
 	... 18 more
-Root exception:
-java.lang.ExceptionInInitializerError
-	at net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop(PMDPlugin.java:382)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.preferencesManager(PriorityDescriptorCache.java:32)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.loadFromPreferences(PriorityDescriptorCache.java:43)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<init>(PriorityDescriptorCache.java:28)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<clinit>(PriorityDescriptorCache.java:24)
-	... 18 more
-!SESSION 2020-01-08 12:54:34.654 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180330-0640
-java.version=1.8.0_231
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -data file:/D:/egov/workspace/ -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.jface 2 0 2020-01-08 12:54:41.574
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-08 12:54:41.574
-!MESSAGE A conflict occurred for ALT+CTRL+T:
-Binding(ALT+CTRL+T,
-	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
-		,
-		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@230383a7,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(ALT+CTRL+T,
-	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
-		,
-		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6222a343,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:27:24.512
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 12:54:47.211
-!MESSAGE Server ‘net.harawata.aer.mybatipse’ failed with exception: aer.ctrlflow.com. ; version: 2.0.7.v20170906-1327
-!STACK 0
-java.net.UnknownHostException: aer.ctrlflow.com
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
-	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
-	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
-	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
-	at java.lang.Thread.run(Thread.java:748)
-
-!ENTRY org.eclipse.egit.ui 2 0 2020-01-08 12:54:48.351
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Genie'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 12:54:50.253
-!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
-!STACK 0
-com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
-	at com.google.gson.Gson.fromJson(Gson.java:888)
-	at com.google.gson.Gson.fromJson(Gson.java:853)
-	at com.google.gson.Gson.fromJson(Gson.java:802)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
-	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
-	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
-	... 9 more
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 12:54:52.241
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:27:24.640
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 12:54:52.293
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:27:25.704
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.ui 2 2 2020-01-08 12:55:26.778
-!MESSAGE Invalid preference category path: egovframework.dev.imp.confmngt.preferences.emptyconfpreperencepage (bundle: egovframework.rte.rdt, page: egovframework.rte.rdt.plugin.preferences.RdtPreferencePage)
-
-!ENTRY org.eclipse.ui 4 4 2020-01-08 12:56:18.431
-!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@13ff179a)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@55a4a0ab)}
-
-!ENTRY net.sourceforge.pmd.eclipse.plugin 4 0 2020-01-08 12:56:46.984
-!MESSAGE FrameworkEvent ERROR
-!STACK 0
-org.osgi.framework.BundleException: Exception in net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop() of bundle net.sourceforge.pmd.eclipse.plugin.
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:855)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ExceptionInInitializerError
-	at net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop(PMDPlugin.java:382)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
-	... 13 more
-Caused by: java.lang.NullPointerException
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.preferencesManager(PriorityDescriptorCache.java:32)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.loadFromPreferences(PriorityDescriptorCache.java:43)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<init>(PriorityDescriptorCache.java:28)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<clinit>(PriorityDescriptorCache.java:24)
-	... 18 more
-Root exception:
-java.lang.ExceptionInInitializerError
-	at net.sourceforge.pmd.eclipse.plugin.PMDPlugin.stop(PMDPlugin.java:382)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.preferencesManager(PriorityDescriptorCache.java:32)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.loadFromPreferences(PriorityDescriptorCache.java:43)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<init>(PriorityDescriptorCache.java:28)
-	at net.sourceforge.pmd.eclipse.ui.priority.PriorityDescriptorCache.<clinit>(PriorityDescriptorCache.java:24)
-	... 18 more
-!SESSION 2020-01-08 12:56:49.196 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180330-0640
-java.version=1.8.0_231
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -data file:/D:/egov/workspace/ -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
-
-!ENTRY org.eclipse.jface 2 0 2020-01-08 12:56:53.867
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-08 12:56:53.867
-!MESSAGE A conflict occurred for ALT+CTRL+T:
-Binding(ALT+CTRL+T,
-	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
-		,
-		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@274b0c2a,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(ALT+CTRL+T,
-	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
-		,
-		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@721f3526,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 12:57:02.187
-!MESSAGE Server ‘net.harawata.aer.mybatipse’ failed with exception: aer.ctrlflow.com. ; version: 2.0.7.v20170906-1327
-!STACK 0
-java.net.UnknownHostException: aer.ctrlflow.com
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
-	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
-	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
-	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
-	at java.lang.Thread.run(Thread.java:748)
-
-!ENTRY org.eclipse.egit.ui 2 0 2020-01-08 12:57:04.105
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Genie'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-08 12:57:05.712
-!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
-!STACK 0
-com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
-	at com.google.gson.Gson.fromJson(Gson.java:888)
-	at com.google.gson.Gson.fromJson(Gson.java:853)
-	at com.google.gson.Gson.fromJson(Gson.java:802)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
-	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
-	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
-	... 9 more
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 13:03:19.808
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:27:25.708
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 13:03:19.843
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:29:42.237
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:30:23.709
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:30:24.671
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:30:28.528
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:30:28.541
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:30:30.434
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:30:30.440
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:31:19.096
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:31:19.727
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:31:19.778
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:31:19.781
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:31:19.784
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:31:23.555
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:31:23.648
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:31:24.691
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:31:56.917
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:31:56.919
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:31:56.921
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:32:08.462
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:32:09.076
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:32:11.543
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:32:11.643
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:32:12.630
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:32:12.635
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:33:36.237
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:33:36.240
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:33:36.245
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:36:05.364
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-08 14:36:06.052
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:36:06.100
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:36:06.102
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-01-08 14:36:06.105
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
