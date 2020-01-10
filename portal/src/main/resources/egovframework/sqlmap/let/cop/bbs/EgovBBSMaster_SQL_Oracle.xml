@@ -87,7 +87,7 @@
 				AND a.USE_AT = #useAt#
 			</isNotEmpty>
 			<isEqual prepend="AND" property="searchCnd" compareValue="0">
-				<![CDATA[	a.BBS_NM LIKE '%' || #searchWrd# || '%' 		]]>
+				<![CDATA[	a.BBS_NM LIKE '%' || #searchWrd# || '%' 		]]> <!-- 아이바티스 #___# -->
 			</isEqual>
 			<isEqual prepend="AND" property="searchCnd" compareValue="1">
 				<![CDATA[	b.CODE_NM LIKE '%' || #searchWrd# || '%'		]]>

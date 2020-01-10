@@ -89,6 +89,13 @@
 				    <img src="<c:url value='/'/>images/header/img_leftcontent_title03.gif" width="228" height="44" alt="포털설문참여" />
 				    </a>
 				</div>
+				
+				<div class="leftcontent03_title">
+				    <a href="<c:url value='/exam/board/EgovExamMain.do'/>">
+				    <img src="<c:url value='/'/>images/header/img_leftcontent_title03.gif" width="228" height="44" alt="포털설문참여" />
+				    </a>
+				</div>
+				
 				<c:forEach var="result" items="${qriList}" varStatus="status">
 				<div class="vote02">
                     <ul>

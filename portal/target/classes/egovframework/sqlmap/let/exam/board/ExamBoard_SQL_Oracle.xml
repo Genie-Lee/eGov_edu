@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ExamBoard">
+
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="ExamBoardVO" type="egovframework.let.exam.board.service.ExamBoardDefaultVO"/>	
+
+	<resultMap id="ExamBoard" class="egovframework.let.exam.board.service.ExamBoardVO">
+		<result property="eno" 		column="ENO" 		columnIndex="1"/>
+		<result property="title" 		column="TITLE" 		columnIndex="2"/>
+		<result property="content" 		column="CONTENT" 		columnIndex="3"/>
+		<result property="writer" 	column="WRITER" 		columnIndex="4"/>
+		<result property="regdate" 	column="REGDATE" 	columnIndex="5"/>
+	</resultMap>
+	
+	<select id="ExamBoardDAO.examList" resultClass="egovMap">
+		<![CDATA[		
+			SELECT 	ENO, TITLE, WRITER, REGDATE
+			FROM	LETTNEXAMBOARDINFO	
+			ORDER BY BNO DESC						
+		]]>
+	</select>
+	
+</sqlMap>

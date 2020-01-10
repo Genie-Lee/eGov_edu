@@ -141,7 +141,7 @@
 		]]>						
 	</select>
 
-			
+	<!-- 게시판 내용 뿌리는 곳 -->	
 	<select id="BBSManageDAO.selectBoardArticleList" parameterClass="BoardVO" resultMap="boardList" >
 		<![CDATA[
 		SELECT * FROM ( SELECT rownum rn, TB.* FROM (
