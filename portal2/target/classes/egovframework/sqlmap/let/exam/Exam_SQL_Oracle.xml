@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="FaqManage">
+
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="ExamVO" type="egovframework.let.exam.service.ExamVO"/>	
+	
+	<select id="ExamDAO.selectExamList" resultClass="egovMap">
+		<![CDATA[		
+			SELECT 	ENO, TITLE, CONTENT, WRITER, REGDATE			 			  			 			  
+			FROM	LETTNEXAMBOARDINFO				
+			WHERE	ENO > 0					
+		]]>
+	</select>
+	
+</sqlMap>

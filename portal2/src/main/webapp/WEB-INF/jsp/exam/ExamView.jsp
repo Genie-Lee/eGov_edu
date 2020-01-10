@@ -30,7 +30,25 @@
     <div id="bodywrap">
     	
 	    <div id="content_field"><!--contents start-->
-	
+	    
+				<!-- search area start-->
+	            <div class="search_service">
+	                <div class="search_area">
+	                <div class="search_conditions" >
+	                    <select name="searchCondition" class="select" title="조회조건 선택">
+				           <option selected value=''>--미구현--</option>
+				           <option value="qestnSj"  <c:if test="${searchVO.searchCondition == 'qestnSj'}">selected="selected"</c:if> >질문제목</option>            
+				       </select>
+				       <input name="searchKeyword" type="text" size="35" value='<c:out value="${searchVO.searchKeyword}"/>'  maxlength="35" title="검색어 입력" > 
+	                </div>
+	                    <div class="search_buttons">
+	                        <input type="submit" value="미구현" onclick="fn_egov_search_faq(); return false;" />
+	                        <a href="<c:url value='/exam/ExamRegistView.do'/>" onclick="fn_egov_regist_faq(); return false;"><spring:message code="button.create" /></a>
+	                    </div>
+	                </div> 
+	            </div>
+	            <!-- search area end -->
+	            
 	            <!-- search result start -->
 	            <div class="search_result_div">
 	            
@@ -63,14 +81,10 @@
 	                </c:if>
 	                <c:forEach items="${resultList}" var="resultInfo" varStatus="status">
 	                <tr>
-				        <td class="lt_text3"><c:out value="${paginationInfo.totalRecordCount+1 - ((searchVO.pageIndex-1) * searchVO.pageSize + status.count)}"/></td>         
-				        <td class="lt_text3"  align="left">
-				            <a href="<c:url value='/uss/olh/faq/FaqInqireCoUpdt.do?faqId=${resultInfo.faqId}&amp;pageIndex=${searchVO.pageIndex}'/>" onclick="fn_egov_inquire_faqlistdetail('<c:url value='${resultInfo.faqId}'/>'); return false;">
-				                <c:out value="${resultInfo.qestnSj}"/>
-				            </a>
-				        </td>       
-				        <td class="lt_text3"><c:out value="${resultInfo.inqireCo}"/></td>       
-				        <td class="lt_text3"><fmt:formatDate value="${resultInfo.lastUpdtPnttm}"  pattern="yyyy-MM-dd"/></td>         
+				        <td class="lt_text3"><c:out value="${resultInfo.eno}"/></td>         
+				        <td class="lt_text3"><c:out value="${resultInfo.content}"/></td>       
+				        <td class="lt_text3"><c:out value="${resultInfo.writer}"/></td>    
+				        <td class="lt_text3"><fmt:formatDate value="${resultInfo.regdate}"  pattern="yyyy-MM-dd"/></td>
 				    </tr>   
 	                </c:forEach>
 	                </tbody>
