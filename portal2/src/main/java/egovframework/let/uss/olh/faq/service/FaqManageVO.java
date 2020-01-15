@@ -51,6 +51,7 @@ public class FaqManageVO extends FaqManageDefaultVO {
 
     /** 최종수정자ID */
     private String lastUpdusrId;
+    
 
 	/**
 	 * faqId attribute 를 리턴한다.

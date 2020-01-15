@@ -14,8 +14,76 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta http-equiv="content-language" content="ko">
 <link rel="stylesheet" href="<c:url value='/'/>css/default.css" type="text/css" >
+<script type="text/javaScript" language="javascript">
+
+/*********************************************************
+ * 초기화
+ ******************************************************** */
+function fn_egov_initl_Examlist(){
+
+	// 첫 입력란에 포커스..
+	document.ExamListForm.searchKeyword.focus();
+	
+}
+
+/*********************************************************
+ * 페이징 처리 함수
+ ******************************************************** */
+function fn_egov_select_linkPage(pageIndex){
+	
+	document.ExamListForm.pageIndex.value = pageIndex;
+	document.ExamListForm.action = "<c:url value='/exam/ExamView.do'/>";
+   	document.ExamListForm.submit();
+   	
+}
+
+/*********************************************************
+ * 조회 처리 함수
+ ******************************************************** */
+function fn_egov_search_exam(){
+
+	document.ExamListForm.pageIndex.value = 1;
+	document.ExamListForm.submit();
+	
+}
+
+/*********************************************************
+ * 등록 처리 함수
+ ******************************************************** */
+function fn_egov_regist_exam(pageIndex){
+	
+	document.ExamListForm.pageIndex.value = pageIndex;
+	document.ExamListForm.action = "<c:url value='/exam/ExamRegistView.do'/>";
+	document.ExamListForm.submit();	
+	
+}
+
+/*********************************************************
+ * 수정 처리 함수
+ ******************************************************** */
+function fn_egov_updt_examlist(){
+
+	document.ExamListForm.action = "<c:url value='/exam/ExamUpdtView.do'/>";
+	document.ExamListForm.submit();	
+
+}
+/* ********************************************************
+ * 상세회면 처리 함수
+ ******************************************************** */
+function fn_egov_inquire_examlistdetail(eno) {		
+
+	// eno
+	document.ExamListForm.examId.value = eno;	
+  	document.ExamListForm.action = "<c:url value='/exam/ExamRead.do'/>";  	
+  	document.ExamListForm.submit();	
+	   	   		
+}
+
+
+
+</script>
 </head>
-<body>
+<body onLoad="fn_egov_initl_Examlist()">
 <!-- login status start -->
 <div id="login_area"><c:import url="/EgovPageLink.do?link=main/inc/EgovIncTborder" /></div>
 <!-- //login status end -->
@@ -31,23 +99,32 @@
     	
 	    <div id="content_field"><!--contents start-->
 	    
+	     <form name="ExamListForm" action="<c:url value='/exam/ExamView.do'/>" method="post">
+            
+            <!-- sub title start -->
+            <div><h2>Exam목록</h2></div>
+            <!-- sub title end -->
+	    
 				<!-- search area start-->
 	            <div class="search_service">
 	                <div class="search_area">
 	                <div class="search_conditions" >
 	                    <select name="searchCondition" class="select" title="조회조건 선택">
-				           <option selected value=''>--미구현--</option>
-				           <option value="qestnSj"  <c:if test="${searchVO.searchCondition == 'qestnSj'}">selected="selected"</c:if> >질문제목</option>            
+				           <option selected value=''>--선택하세요--</option>
+				           <option value="title"  <c:if test="${searchVO.searchCondition == 'title'}">selected="selected"</c:if> >제목</option> 
+				           <option value="writer"  <c:if test="${searchVO.searchCondition == 'writer'}">selected="selected"</c:if> >작성자</option>       
 				       </select>
-				       <input name="searchKeyword" type="text" size="35" value='<c:out value="${searchVO.searchKeyword}"/>'  maxlength="35" title="검색어 입력" > 
+				       <input name="searchKeyword" type="text" size="35" value= '<c:out value="${searchVO.searchKeyword}" />'  maxlength="35" title="검색어 입력"> 
 	                </div>
 	                    <div class="search_buttons">
-	                        <input type="submit" value="미구현" onclick="fn_egov_search_faq(); return false;" />
-	                        <a href="<c:url value='/exam/ExamRegistView.do'/>" onclick="fn_egov_regist_faq(); return false;"><spring:message code="button.create" /></a>
+	                        <input type="submit" value="검색" onclick="fn_egov_search_exam(); return false;" />
+	                        <a href="<c:url value='/exam/ExamRegistView.do?pageIndex=${searchVO.pageIndex }'/>" onclick="fn_egov_regist_exam(<c:out value='${searchVO.pageIndex }'/>); return false;"><spring:message code="button.create" /></a>
 	                    </div>
 	                </div> 
 	            </div>
 	            <!-- search area end -->
+	            
+	            </form>
 	            
 	            <!-- search result start -->
 	            <div class="search_result_div">
@@ -64,7 +141,7 @@
 	                
 	                <thead>
 	                <tr>      
-	                    <th>순번</th>        
+	                    <th>게시물 번호</th>        
 					    <th>제목</th>                   
 					    <th>작성자</th>        
 					    <th>등록일자</th>               
@@ -81,8 +158,12 @@
 	                </c:if>
 	                <c:forEach items="${resultList}" var="resultInfo" varStatus="status">
 	                <tr>
-				        <td class="lt_text3"><c:out value="${resultInfo.eno}"/></td>         
-				        <td class="lt_text3"><c:out value="${resultInfo.content}"/></td>       
+				        <td class="lt_text3"><c:out value="${paginationInfo.totalRecordCount+1 - ((searchVO.pageIndex-1) * searchVO.pageSize + status.count)}"/></td>         
+				        <td class="lt_text3">
+				        	<a href="<c:url value='/exam/ExamRead.do?eno=${resultInfo.eno}&amp;pageIndex=${searchVO.pageIndex}'/>" onclick="fn_egov_examlistdetail('<c:url value='${resultInfo.eno}'/>'); return false;">
+				        		<c:out value="${resultInfo.title}"/>
+				        	</a>
+				        </td>
 				        <td class="lt_text3"><c:out value="${resultInfo.writer}"/></td>    
 				        <td class="lt_text3"><fmt:formatDate value="${resultInfo.regdate}"  pattern="yyyy-MM-dd"/></td>
 				    </tr>   
@@ -92,6 +173,12 @@
 	                </table>
 	            </div>
 	            <!-- search result end -->
+	            
+	            <div id="paging_div">
+	            	<ul class="paging_align">
+	            		<ui:pagination paginationInfo="${paginationInfo}" type="image" jsFunction="fn_egov_select_linkPage"/>
+	            	</ul>
+	            </div>
 	            
 	    	</div><!-- contents end -->
     </div>

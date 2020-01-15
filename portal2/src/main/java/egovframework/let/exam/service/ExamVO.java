@@ -15,8 +15,8 @@ public class ExamVO {
 	private String writer;
 	
 	/** 등록일 */
-	private String regDate;
-
+	private String regdate;
+	
 	
 	public String getEno() {
 		return eno;
@@ -50,12 +50,12 @@ public class ExamVO {
 		this.writer = writer;
 	}
 
-	public String getRegDate() {
-		return regDate;
+	public String getRegdate() {
+		return regdate;
 	}
 
-	public void setRegDate(String regDate) {
-		this.regDate = regDate;
+	public void setRegdate(String regdate) {
+		this.regdate = regdate;
 	}
 	
 }

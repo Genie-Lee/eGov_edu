@@ -1,17 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
 
-<sqlMap namespace="FaqManage">
+<sqlMap namespace="Exam">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
 	<typeAlias  alias="ExamVO" type="egovframework.let.exam.service.ExamVO"/>	
+	<typeAlias  alias="ExamSubVO" type="egovframework.let.exam.service.ExamSubVO"/>	
 	
 	<select id="ExamDAO.selectExamList" resultClass="egovMap">
 		<![CDATA[		
-			SELECT 	ENO, TITLE, CONTENT, WRITER, REGDATE			 			  			 			  
-			FROM	LETTNEXAMBOARDINFO				
-			WHERE	ENO > 0					
+			SELECT	ENO, TITLE, CONTENT, WRITER, REGDATE
+			FROM
+					(
+					SELECT ROWNUM RN, EXAM.*
+					FROM	
+							(
+							SELECT 	ENO, TITLE, CONTENT, WRITER, REGDATE			 			  			 			  
+							FROM	LETTNEXAMBOARDINFO				
+							WHERE	1=1 AND STATE='0'
+		]]>
+			<isEqual prepend="AND" property="searchCondition" compareValue="title">
+				<![CDATA[TITLE LIKE '%' || #searchKeyword# || '%']]>
+			</isEqual>
+			<isEqual prepend="AND" property="searchCondition" compareValue="writer">
+				<![CDATA[WRITER LIKE '%' || #searchKeyword# || '%']]>
+			</isEqual>					
+		<![CDATA[
+							ORDER BY ENO DESC
+							) EXAM
+					)
+			WHERE RN <= #lastIndex# AND RN > #firstIndex#				
 		]]>
 	</select>
+	
+	<select id="ExamDAO.selectExamListTotCnt" parameterClass="ExamSubVO" resultClass="int">
+		<![CDATA[
+			SELECT	COUNT(*) totcnt
+			FROM	LETTNEXAMBOARDINFO
+			WHERE	1=1 AND STATE='0'
+		]]>
+			<isEqual prepend="AND" property="searchCondition" compareValue="title">
+				<![CDATA[TITLE LIKE '%' || #searchKeyword# || '%']]>
+			</isEqual>
+			<isEqual prepend="AND" property="searchCondition" compareValue="writer">
+				<![CDATA[WRITER LIKE '%' || #searchKeyword# || '%']]>
+			</isEqual>
+	</select>
+	
+	<insert id="ExamDAO.insertExam">
+		<![CDATA[
+			INSERT INTO LETTNEXAMBOARDINFO 
+				(ENO, TITLE, CONTENT, WRITER, STATE)
+			VALUES (ENO_SEQ.NEXTVAL, #title#, #content#, #writer#, 0)
+		]]>
+	</insert>
+	
+	<select id="ExamDAO.selectExamRead" resultClass="ExamVO">
+		<![CDATA[
+			SELECT 	ENO, TITLE, CONTENT, WRITER, REGDATE
+			FROM	LETTNEXAMBOARDINFO
+			WHERE   ENO=#eno# AND STATE = '0'
+		]]>
+	</select>
+	
+	<update id="ExamDAO.updateExam">
+		<![CDATA[
+			UPDATE  LETTNEXAMBOARDINFO  SET
+					TITLE=#title#
+					,CONTENT=#content#
+					,WRITER=#writer#
+			WHERE	ENO=#eno#
+		]]>
+	</update>
+	
+	<update id="ExamDAO.deleteExam">
+		<![CDATA[
+			UPDATE  LETTNEXAMBOARDINFO  SET
+					STATE='1'
+			WHERE	ENO=#eno#
+		]]>
+	</update>
 	
 </sqlMap>
