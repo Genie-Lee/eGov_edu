@@ -83,7 +83,7 @@
     }
     function goMenuPage(menuNo){
         document.getElementById("menuNo").value=menuNo;
-        document.getElementById("link").value="forward:"+getLastLink(menuNo);
+        document.getElementById("link").value="redirect:"+getLastLink(menuNo);
         document.menuListForm.action = "<c:url value='/EgovPageLink.do'/>";
         document.menuListForm.submit();
     }

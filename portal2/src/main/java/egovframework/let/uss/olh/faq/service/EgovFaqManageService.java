@@ -37,7 +37,6 @@ public interface EgovFaqManageService {
 	 */
     void updateFaqInqireCo(FaqManageVO vo) throws Exception;
 
-
     /**
 	 * FAQ 글 목록을 조회한다.
 	 * @param searchVO

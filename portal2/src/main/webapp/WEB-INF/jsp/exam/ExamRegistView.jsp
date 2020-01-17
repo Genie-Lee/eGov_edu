@@ -121,17 +121,17 @@ function fn_egov_regist_exam(form){
 					  <tr> 
 					    <td class="td_width"><label>내용</label><img src="<c:url value='/images/required.gif'/>" width="15" height="15" alt="필수항목"></td>
 					    <td class="td_content">
-					      <form:textarea path="content" cols="70" rows="15" cssClass="txaClass"  title="질문내용"/>   
+					      <form:textarea path="content" cols="70" rows="15" cssClass="txaClass"  title="질문내용" maxlength="1000" />   
 					      <form:errors path="content"/>                                                                       
 					    </td>
 					  </tr> 
-					  <tr> 
+					  <%-- <tr> 
 					    <td class="td_width"><label for="writer">작성자</label><img src="<c:url value='/images/required.gif'/>" width="15" height="15" alt="필수항목"></td>
 					 	<td class="td_content">
 					    	<form:input path="writer" size="70" maxlength="70" title="작성자"/>
 					        <form:errors path="writer"/>                           
 					    </td>
-					  </tr> 
+					  </tr>  --%>
 					</table>
                 </div>
             </div>

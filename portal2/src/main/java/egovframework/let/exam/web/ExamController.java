@@ -13,10 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
+import egovframework.com.cmm.EgovMessageSource;
+import egovframework.com.cmm.LoginVO;
 import egovframework.let.exam.service.ExamService;
 import egovframework.let.exam.service.ExamSubVO;
 import egovframework.let.exam.service.ExamVO;
 import egovframework.rte.fdl.property.EgovPropertyService;
+import egovframework.rte.fdl.security.userdetails.util.EgovUserDetailsHelper;
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 
 
@@ -29,6 +32,10 @@ public class ExamController {
 	/** EgovPropertyService */
     @Resource(name = "propertiesService")
     protected EgovPropertyService propertiesService;
+    
+    /** EgovMessageSource */
+    @Resource(name = "egovMessageSource")
+    EgovMessageSource egovMessageSource;
 	
 	//Validation 관련
 	@Autowired
@@ -77,6 +84,13 @@ public class ExamController {
 	@RequestMapping("/exam/ExamRegistView.do")
 	public String insertExamView(@ModelAttribute("searchVO") ExamSubVO searchVO, Model model) throws Exception {
 		
+		Boolean isAuthenticated = EgovUserDetailsHelper.isAuthenticated();
+		if(!isAuthenticated) {
+			model.addAttribute("message", egovMessageSource.getMessage("fail.common.login"));
+			return "uat/uia/EgovLoginUsr";
+			
+		}
+		
 		model.addAttribute("examVO", new ExamVO());
 		return "/exam/ExamRegistView";
 	}
@@ -97,6 +111,12 @@ public class ExamController {
 			return "/exam/ExamRegistView";
 			
 		}
+		
+		LoginVO loginVO = (LoginVO)EgovUserDetailsHelper.getAuthenticatedUser();
+		
+		String writerId = loginVO.getUniqId();
+		
+		examVO.setEsntl_Id(writerId);
 		
 		examService.insertExam(examVO);
 		
@@ -119,6 +139,15 @@ public class ExamController {
 	 */
 	@RequestMapping("/exam/ExamRead.do")
 	public String selectExamRead(ExamVO examVO, @ModelAttribute("searchVO") ExamSubVO searchVO, ModelMap model) throws Exception {
+		
+		Boolean isAuthenticated = EgovUserDetailsHelper.isAuthenticated();
+		if(isAuthenticated) {
+		LoginVO loginVO = (LoginVO)EgovUserDetailsHelper.getAuthenticatedUser();
+		
+		String writerId = loginVO.getUniqId();
+		
+		model.addAttribute("user", writerId);
+		}
 		
 		ExamVO vo = examService.selectExamRead(examVO);
 		

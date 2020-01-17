@@ -47,28 +47,35 @@
 			</isEqual>
 	</select>
 	
+	<select id="ExamDAO.selectExamRead" resultClass="ExamVO">
+		<![CDATA[
+			SELECT 	ENO, TITLE, CONTENT, WRITER, REGDATE, ESNTL_ID
+			FROM	(
+					SELECT E.ENO, E.TITLE, E.CONTENT, E.WRITER, E.REGDATE, M.ESNTL_ID
+					FROM LETTNEXAMBOARDINFO E, LETTNGNRLMBER M
+					WHERE E.WRITER = M.MBER_NM(+) AND STATE = '0'
+					)
+			WHERE   ENO=#eno#
+		]]>
+	</select>
+	
 	<insert id="ExamDAO.insertExam">
 		<![CDATA[
 			INSERT INTO LETTNEXAMBOARDINFO 
 				(ENO, TITLE, CONTENT, WRITER, STATE)
-			VALUES (ENO_SEQ.NEXTVAL, #title#, #content#, #writer#, 0)
+			VALUES (ENO_SEQ.NEXTVAL, #title#, #content#, (
+															SELECT MBER_NM
+															FROM LETTNGNRLMBER
+															WHERE ESNTL_ID = #esntl_Id#
+															)
+															, 0)
 		]]>
 	</insert>
-	
-	<select id="ExamDAO.selectExamRead" resultClass="ExamVO">
-		<![CDATA[
-			SELECT 	ENO, TITLE, CONTENT, WRITER, REGDATE
-			FROM	LETTNEXAMBOARDINFO
-			WHERE   ENO=#eno# AND STATE = '0'
-		]]>
-	</select>
 	
 	<update id="ExamDAO.updateExam">
 		<![CDATA[
 			UPDATE  LETTNEXAMBOARDINFO  SET
-					TITLE=#title#
-					,CONTENT=#content#
-					,WRITER=#writer#
+					TITLE=#title#, CONTENT=#content#
 			WHERE	ENO=#eno#
 		]]>
 	</update>

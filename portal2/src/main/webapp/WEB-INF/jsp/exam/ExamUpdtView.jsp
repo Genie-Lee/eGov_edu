@@ -114,13 +114,13 @@ function fn_egov_updt_exam(form, eno/* , pageIndex */){
 					      <form:errors path="content"/>                                                                       
 					    </td>
 					  </tr> 
-					  <tr> 
+					  <%-- <tr> 
 					    <td class="td_width"><label for="writer">작성자</label><img src="<c:url value='/'/>images/required.gif" alt="필수항목" title="필수항목" width="15" height="15"/></td>
 					    <td class="td_content">
 					        <form:input path="writer" size="70" maxlength="70" title="작성자"/>
 					        <form:errors path="writer"/>                                
 					    </td>
-					  </tr> 
+					  </tr> --%> 
 					</table>
                 </div>
             </div>

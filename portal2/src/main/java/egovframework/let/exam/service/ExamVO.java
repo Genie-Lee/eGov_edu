@@ -17,6 +17,9 @@ public class ExamVO {
 	/** 등록일 */
 	private String regdate;
 	
+	/** 유저 아이디 코드번호 */
+	private String esntl_Id = "";
+	
 	
 	public String getEno() {
 		return eno;
@@ -56,6 +59,14 @@ public class ExamVO {
 
 	public void setRegdate(String regdate) {
 		this.regdate = regdate;
+	}
+
+	public String getEsntl_Id() {
+		return esntl_Id;
+	}
+
+	public void setEsntl_Id(String esntl_Id) {
+		this.esntl_Id = esntl_Id;
 	}
 	
 }

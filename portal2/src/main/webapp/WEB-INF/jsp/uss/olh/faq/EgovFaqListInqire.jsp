@@ -205,9 +205,9 @@ function fn_egov_inquire_faqlistdetail(faqId) {
            </div><!-- contents end -->
         </div>
     </div>
-    <!-- footer 시작 -->
-    <div id="footer"><c:import url="/EgovPageLink.do?link=main/inc/EgovIncFooter" /></div>
-    <!-- //footer 끝 -->
+<!--     footer 시작 -->
+<%--     <div id="footer"><c:import url="/EgovPageLink.do?link=main/inc/EgovIncFooter" /></div> --%>
+<!--     //footer 끝 -->
 </div>
 <!-- //wrap end -->
 </body>

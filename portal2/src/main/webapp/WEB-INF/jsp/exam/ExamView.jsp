@@ -5,16 +5,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="content-language" content="ko">
 <title>exam 게시판</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta http-equiv="content-language" content="ko">
 <link rel="stylesheet" href="<c:url value='/'/>css/default.css" type="text/css" >
-<script type="text/javaScript" language="javascript">
+<script>
 
 /*********************************************************
  * 초기화
@@ -29,9 +29,9 @@ function fn_egov_initl_Examlist(){
 /*********************************************************
  * 페이징 처리 함수
  ******************************************************** */
-function fn_egov_select_linkPage(pageIndex){
+function fn_egov_select_linkPage(pageNo){
 	
-	document.ExamListForm.pageIndex.value = pageIndex;
+	document.ExamListForm.pageIndex.value = pageNo;
 	document.ExamListForm.action = "<c:url value='/exam/ExamView.do'/>";
    	document.ExamListForm.submit();
    	
@@ -160,7 +160,7 @@ function fn_egov_inquire_examlistdetail(eno) {
 	                <tr>
 				        <td class="lt_text3"><c:out value="${paginationInfo.totalRecordCount+1 - ((searchVO.pageIndex-1) * searchVO.pageSize + status.count)}"/></td>         
 				        <td class="lt_text3">
-				        	<a href="<c:url value='/exam/ExamRead.do?eno=${resultInfo.eno}&amp;pageIndex=${searchVO.pageIndex}'/>" onclick="fn_egov_examlistdetail('<c:url value='${resultInfo.eno}'/>'); return false;">
+				        	<a href="<c:url value='/exam/ExamRead.do?eno=${resultInfo.eno}&amp;pageIndex=${searchVO.pageIndex}'/>" >
 				        		<c:out value="${resultInfo.title}"/>
 				        	</a>
 				        </td>
