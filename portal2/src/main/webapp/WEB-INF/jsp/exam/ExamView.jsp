@@ -1,3 +1,4 @@
+<%@ page import="egovframework.com.cmm.LoginVO"%>
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"  %>
@@ -118,7 +119,13 @@ function fn_egov_inquire_examlistdetail(eno) {
 	                </div>
 	                    <div class="search_buttons">
 	                        <input type="submit" value="검색" onclick="fn_egov_search_exam(); return false;" />
-	                        <a href="<c:url value='/exam/ExamRegistView.do?pageIndex=${searchVO.pageIndex }'/>" onclick="fn_egov_regist_exam(<c:out value='${searchVO.pageIndex }'/>); return false;"><spring:message code="button.create" /></a>
+	                    
+	                    	<%
+	                    		LoginVO loginVO = (LoginVO)session.getAttribute("LoginVO");
+	                    		if(loginVO != null){
+	                    	%>
+	                        	<a href="<c:url value='/exam/ExamRegistView.do?pageIndex=${searchVO.pageIndex }'/>" onclick="fn_egov_regist_exam(<c:out value='${searchVO.pageIndex }'/>); return false;"><spring:message code="button.create" /></a>
+	                    	<%} %>
 	                    </div>
 	                </div> 
 	            </div>

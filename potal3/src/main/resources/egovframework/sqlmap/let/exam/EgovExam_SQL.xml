@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="examDAO">
+
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="examVO" type="egovframework.let.exam.service.ExamVO"/>	
+	
+	<resultMap id="Exam" class="egovframework.let.exam.service.ExamVO">
+		<result property="examId" 				column="EXAM_ID"  />
+		<result property="examSj" 				column="EXAM_SJ"  />
+		<result property="examCn" 				column="EXAM_CN"  />
+		<result property="inqireCo" 			column="RDCNT" />
+		<result property="atchFileId" 			column="ATCH_FILE_ID" />		
+		<result property="frstRegisterPnttm" 	column="FRST_REGIST_PNTTM"  />
+		<result property="frstRegisterId"		column="FRST_REGISTER_ID"  />
+		<result property="lastUpdusrPnttm"		column="LAST_UPDT_PNTTM"  />
+		<result property="lastUpdusrId"			column="LAST_UPDUSR_ID"  />
+	</resultMap>	
+	
+	
+	<select id="examDAO.selectExamList" resultClass="egovMap">
+	    <![CDATA[
+	    	SELECT	EXAM_ID, EXAM_SJ, EXAM_CN, RDCNT AS INQIRE_CO, ATCH_FILE_ID,
+	    			FRST_REGIST_PNTTM, FRST_REGISTER_ID,
+	    			LAST_UPDT_PNTTM, LAST_UPDUSR_ID
+	    	FROM	LETTNEXAM
+	    			ORDER BY EXAM_ID DESC
+	    ]]>
+	</select>
+	
+	<select id="examDAO.selectExamListDetail" resultMap = "Exam" >
+	    <![CDATA[
+           	SELECT	EXAM_ID, EXAM_SJ, EXAM_CN, RDCNT, ATCH_FILE_ID,
+	    			FRST_REGIST_PNTTM, FRST_REGISTER_ID,
+	    			LAST_UPDT_PNTTM, LAST_UPDUSR_ID
+	    	FROM	LETTNEXAM
+ 	    	WHERE	trim(EXAM_ID) = #examId# 
+ 	    ]]> 
+	</select>
+	
+	<insert id="examDAO.insertExamCn" >
+	    <![CDATA[
+	    	INSERT INTO LETTNEXAM
+	    		   (EXAM_ID
+	    		  , EXAM_SJ
+	    		  , EXAM_CN
+	    		  , RDCNT
+	    		  , ATCH_FILE_ID
+	    		  , FRST_REGIST_PNTTM
+	    		  , FRST_REGISTER_ID
+	    		  , LAST_UPDT_PNTTM
+	    		  , LAST_UPDUSR_ID)
+	    	VALUES ( exam_seq.nextval
+	    		  , #examSj#
+	    		  , #examCn#
+	    		  , 0
+	    		  , 'atchFileId'
+	    		  , sysdate
+	    		  , 'frstRegisterId'
+	    		  , sysdate
+	    		  , 'lastUpdusrId' )
+	    ]]>
+	</insert>
+	
+	
+</sqlMap>

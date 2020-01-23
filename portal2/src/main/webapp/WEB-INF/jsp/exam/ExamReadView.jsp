@@ -134,11 +134,11 @@ function fn_egov_delete_exam(eno){
             <!-- 수정, 삭제, 목록버튼  시작-->
             <table border="0" cellspacing="0" cellpadding="0" align="center"><tr><td>
             <div class="buttons" align="center" style="margin-bottom:100px">
-            <c:if test="${result.esntl_Id == user && result.esntl_Id != null}">
+            <c:if test="${result.esntl_Id eq user or user eq 'USRCNFRM_00000000000'}">
                  <input type="submit" value="<spring:message code="button.update" />" onclick="fn_egov_updt_exam('<c:out value="${result.eno}"/>','<c:out value="${searchVO.pageIndex}"/>'); return false;">
                  <a href="<c:url value='/exam/ExamDelete.do?eno=${result.eno}&amp;pageIndex=${searchVO.pageIndex }'/>" onclick="fn_egov_delete_exam('<c:out value="${result.eno}"/>'); return false;"><spring:message code="button.delete" /></a>
 			</c:if>
-                 <a href="<c:url value='/exam/ExamView.do'/>?pageIndex=<c:out value='${searchVO.pageIndex}'/>" onclick="fn_egov_examView(<c:out value='${searchVO.pageIndex}'/>); return false;"><spring:message code="button.list" /></a>
+                 <a href="<c:url value='/exam/ExamView.do?pageIndex=${searchVO.pageIndex}'/>" onclick="fn_egov_examView(<c:out value='${searchVO.pageIndex}'/>); return false;"><spring:message code="button.list" /></a>
             </div>
             </td></tr></table>
             <!-- 수정, 삭제, 목록버튼  끝-->
